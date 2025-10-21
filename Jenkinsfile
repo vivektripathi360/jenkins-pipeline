@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Docker Image...'
-                sh 'docker build -t nodejs-jenkins-app .'
+                sh 'docker build -t jenkins-pipeline .'
             }
         }
 
@@ -25,3 +25,4 @@ pipeline {
         }
     }
 }
+
